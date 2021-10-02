@@ -1,0 +1,124 @@
+/*POR ETIQUETA*/
+body{
+    height: 740px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+}
+h1{
+    color: #7e0707;
+    font-weight: lighter;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+h1 span{
+    color: white;
+}
+button{
+    background-color: burlywood;
+    color: black;
+}
+/*POR ID # */
+#btnInicio{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40%;
+    color: #7e0707;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: -5px 5px 5px 0px rgba(255, 255, 255, 0.72);
+}   
+li{
+    color: white
+}
+/*POR CLASE*/
+.activo{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#barril{
+    bottom: 2%;
+    left: 30%;
+    width: 150px;
+    position: absolute;
+    transform: rotate(18deg);
+    animation-name: barrilAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#barril img{
+    width: 100%;
+}
+#barril2{
+    bottom: 2%;
+    right: 25%;
+    width: 150px;
+    position: absolute;
+    transform: rotate(352deg);
+    animation-name: barrilAnim2;
+    animation-delay: 3s;
+    animation-duration:1.5s;
+    }
+#barril2 img{
+    width: 100%;
+}
+#dk{
+    top: 2%;
+    left: 21%;
+    width: 150px;
+    position: absolute;
+    animation-name: changoAnim;
+    animation-duration: 5s;
+        }
+#dk img{
+    width: 100%;
+}
+#logo{
+    position: absolute;
+    top: 2%;
+    right: 20px;
+    width: 200px;
+    transition: 0.5s ease-in all;
+}
+#logo img{
+    width: 100%;
+}
+#logo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    border-radius: 50px;
+}
+@keyframes barrilAnim {
+    0%{transform: rotate(-90deg);}
+    50%{transform: rotate(90deg);}
+    100%{transform: rotate(-90deg);}
+}
+@keyframes changoAnim {
+    0%{top: 2%; left: 21%;}
+    7%{top: -17%; left: 25%}
+    14%{top: -21%; left: 30%}
+    21%{top: -11%; left: 34%}
+    28%{top: 22%; left: 40%;}
+    35%{top: 15%; left: 43%}
+    42%{top: 11%; left: 50%}
+    49%{top: 15%; left: 55%}
+    56%{top: 76%; left: 65%}
+    63%{top: 76%;left: 65%;transform: rotate(0deg); opacity: 1;}
+    70%{top: 76%;left: 65%;transform: rotate(359deg); opacity: 0.5;}
+    77%{top: 76%;left: 65%;transform: rotate(0deg); opacity: 0;}
+    84%{top: 76%;left: 65%;transform: rotate(359deg); opacity: 0.5;}
+    91%{top: 76%;left: 65%;transform: rotate(0deg); opacity: 1;}
+    100%{top: -25%; left: 65%;}
+}
+@keyframes barrilAnim2 {
+    0%{top: 76%;left: 65%;transform: rotate(0deg)}
+    25%{top: 76%;left: 65%;transform: rotate(359deg)}
+    50%{top: 76%;left: 65%;transform: rotate(0deg)}
+    75%{top: 76%;left: 65%;transform: rotate(359deg)}
+    100%{top: 76%;left: 65%;transform: rotate(0deg)}
+}
