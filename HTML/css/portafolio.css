@@ -57,27 +57,29 @@ header nav ul li a:hover{
 section#main{
     background-color: black;
     height: 100vh;
+    overflow: hidden;
 }
 #main video{
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 #main #overlay{
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0);
-    background-image: url(../img/patron2.png);
+    background-color: rgba(0, 0, 0, 0.8);
+    /*background-image: url(../img/patron2.png);*/
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
-    opacity: 0.3;
+    /*opacity: 0.3;*/
 }
 #main #overlay h2{
     margin-top: 300px;
     color: white;
     text-align: center;
     font-size: 6rem;
+    opacity: 1;
 }
 #main #overlay h3{
     text-align: center;
@@ -105,9 +107,156 @@ section#main{
 a.btn{
     text-decoration: none;
     color: white;
+    border-bottom: 2px solid white;
 }
 a.btn:hover{
     cursor: pointer;
     border-bottom: 2px solid white;
     border-radius: 50px;
+}
+#about, #contacto{
+    width: 80%;
+    height: 550px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#about .col, #contacto .col{
+    float: left;
+    width: 50%;
+    text-align: justify;
+}
+#about > h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#about > .col > h2{
+    font-size: 2rem;
+    font-family: 'Open sans', sans-serif;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+#about .col img{
+    width: 70%;
+    display: block;
+    max-resolution: 20px auto;
+}
+#about .col p{
+    margin-top: 50px;
+}
+#proyectos{
+    height: 500px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#proyectos h3{
+    font-size: 2rem;
+    font-family: 'Open sans', sans-serif;
+}
+#divi{
+    height: 300px;
+    padding-top: 50px;
+    width: 100%;
+    
+}
+#divi .item{
+    float: left;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    border-radius: 30px;
+    margin-left: 4%;
+    margin-top: 0px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.72);
+
+}
+#partes{
+    height: 50%;
+    background-size:cover;
+    background-position: center center;
+    background-image: url("../img/programador.jpg");
+    border-radius: 30px 30px 0px 0px;
+}
+#partes1{
+    margin: 10px;
+}
+#partes1 >p{
+    margin-top: 5px;
+    font-size: 1rem;
+}
+#partes1 >h3{
+    font-size: 1.5rem;
+    font-family: 'Open sans', sans-serif;
+}
+a.btn.btnVer{
+    margin-top: 20px;
+    background: #148ac0;
+    color: white;
+    display: block;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    margin-left: 15px;
+    border-radius: 30px;
+}
+#division{
+    height: 200px;
+}
+#division #fondiv{
+    height: 150px;
+    padding-top: 25px;
+    background-position: center center;
+    background-image: url("../img/division.jpg");
+
+}
+#division #fondiv #subdiv h2{
+    height: 50px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 4px 2px 0px black;
+}
+#contacto{
+    height: 600px;
+}
+#contacto .col > h2{
+    font-size: 2rem;
+    font-family: 'Open sans', sans-serif;
+}
+#contacto .col fieldset{
+    width: 80%;
+    height: 20px;
+    font-size: 0.8rem;
+}
+#contacto .col input{
+    width: 80%;
+    height: 200px;
+}
+a.btn.btnEnviar{
+    background: #148ac0;
+    color: white;
+    display: block;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+#final{
+    width: 80%;
+    height: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+}
+#final div{
+    width: 80%;
+    height: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Open sans', sans-serif;
+    color: white;
 }
