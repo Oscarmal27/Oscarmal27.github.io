@@ -145,12 +145,12 @@ a.btn:hover{
 #about .col p{
     margin-top: 50px;
 }
-#proyectos{
+#portafolio{
     height: 500px;
     padding-left: 10%;
     padding-right: 10%;
 }
-#proyectos h3{
+#portafolio h3{
     font-size: 2rem;
     font-family: 'Open sans', sans-serif;
 }
