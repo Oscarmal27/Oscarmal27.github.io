@@ -33,6 +33,9 @@ header nav{
     margin-right: 10%;
     width: 500px;
 }
+header #menuMovil{
+    display: none;
+}
 header nav ul li{
     float: left;
     list-style: none;
@@ -116,7 +119,7 @@ a.btn:hover{
 }
 #about, #contacto{
     width: 80%;
-    height: 550px;
+    min-height: 550px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -146,7 +149,7 @@ a.btn:hover{
     margin-top: 50px;
 }
 #portafolio{
-    height: 500px;
+    min-height: 500px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -220,7 +223,7 @@ a.btn.btnVer{
     text-shadow: 4px 2px 0px black;
 }
 #contacto{
-    height: 600px;
+    min-height: 600px;
 }
 #contacto .col > h2{
     font-size: 2rem;
