@@ -1,0 +1,26 @@
+@media (min-width: 500px){
+    header nav{
+        width: 50px;
+    }
+    header #menuMovil{
+        display: none;
+    }
+    header #menuWeb{
+        display: block;
+    }
+    #novedades button{
+       width: 40%;
+    }
+    #gui1, #gui2, #gui3{
+        width: 100%;
+    }
+    #divi .item {
+        width: 100%;
+    }
+    #acc1, #acc2, #acc3, #acc4{
+        width: 100%;
+    }
+    #como .col{
+        width: 100%;
+    }
+}
