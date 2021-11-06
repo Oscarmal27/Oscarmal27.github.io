@@ -8,7 +8,7 @@ window.onload= function(){
         let pass = txtPassword.value;
         let arregloUsuarios=[
             {id:1, nombre:"Federica Pluche", image:"fede.jpg", username:"fedep", password:"123"},
-            {id:1, nombre:"Don Camerino", image:"dc.jpg", username:"camerino", password:"123"},
+            {id:1, nombre:"Don Camerino", image:"camerino.jpg", username:"camerino", password:"123"},
             {id:1, nombre:"Vivi", image:"vivi.jpg", username:"vivi", password:"123"},
 
         ];
@@ -25,7 +25,7 @@ window.onload= function(){
         if(encontro){
             ///redireccionar
             location.href="./index.html";
-            
+
         }else{
             document.getElementById("error").innerHTML="Credenciales Incorrectas";
             txtUsuario.style.backgroundColor="#FF0000";
