@@ -180,3 +180,18 @@ main{
 .post .textTweet{
  padding-top: 10px;
 }
+#grises{
+    color:var(--gris);
+    font-size: 1.5rem;
+}
+#grises div{
+    width: 20%;
+    float: left;
+}
+#likes{
+    padding-right: 60%;
+}
+#division{
+    width: 90%;
+    margin-left: 10%;
+}
